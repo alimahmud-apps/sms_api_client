@@ -51,6 +51,7 @@ class push extends REST_Controller {
 				$text 				= $this->post('text');
 				$id_sekolah 		= $this->post('id_sekolah');
 				$message_ar 		= $this->post('message_ar');
+				$tipe_sms 			= $this->post('tipe_sms');
 				
 				$cekSekolah = $this->Main_model->getSekolah($id_sekolah);
 				if(count($cekSekolah)>0){
@@ -59,6 +60,7 @@ class push extends REST_Controller {
 							'text_message' 		=> $text,
 							'id_sekolah_client' => $id_sekolah,
 							'message_ar' 		=> $message_ar,
+							'type_sms' 			=> $tipe_sms,
 
 						);
 					$insert = $this->Main_model->insert_ci($data_insert,"data_sms");

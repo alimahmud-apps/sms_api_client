@@ -103,10 +103,10 @@ $db['default'] = array(
 // 'username' => 'adempiere',
 // 'password' => 'adempiere',
 // 'database' => 'tmp_hrd',
-'hostname' => 'localhost',
-'username' => 'smsmasking',
-'password' => 'smsmasking',
-'database' => 'smsmasking',
+'hostname' => 'master-edu.dknet.id',
+'username' => 'itdev',
+'password' => 'y9aF*0wfMe!XYwSD76XWg',
+'database' => 'masking',
 'dbdriver' => 'postgre',
 'dbprefix' => '',
 'pconnect' => FALSE,
@@ -121,7 +121,7 @@ $db['default'] = array(
 'stricton' => FALSE,
 'failover' => array(),
 'save_queries' => TRUE,
-'port'     => 5433,
+'port'     => 5432,
 );
 
 

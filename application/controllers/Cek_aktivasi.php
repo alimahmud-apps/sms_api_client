@@ -52,7 +52,7 @@ class Cek_aktivasi extends REST_Controller {
 		
 				
 				$cekSekolah = $this->Main_model->cekAktivasi($id_sekolah,$imei);
-				if(count($cekSekolah)>0){
+				if(count($cekSekolah) > 0){
 					$res = array('status' => 1, 'data' => $cekSekolah);
 				}else{
 					$res = array('status' => 0, 'message' => 'Data not found');

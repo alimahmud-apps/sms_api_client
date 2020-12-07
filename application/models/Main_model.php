@@ -23,7 +23,12 @@ class Main_model extends CI_Model
 		return $query;
 	}
 
-	
+	function getSekolah($id_sekolah_client,$imei){
+		$sql="select *  from m_sekolah where id_sekolah_client='$id_sekolah_client' and imei_gammu='$imei'";
+		$query = $this->db->query($sql)->result_array();
+
+		return $query;
+	}
 }
 
 
